@@ -1,0 +1,25 @@
+#homeview{
+display: flex;
+flex-direction: column;
+height: fit-content;
+align-content: space-between;
+min-height: 100vh;
+}
+footer{
+    margin-top: auto;
+}
+  #imgcontainer{
+    position: relative;
+    width: 100vmax;
+    height: 200px;
+    background-image: url('../assets/background.jpg');
+    background-position: center;
+  }#imgcontainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the last value (0.5) for the desired opacity */
+  }
